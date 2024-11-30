@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Stalinist One", sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(93, 28, 146)45%, blue, rgb(150, 87, 228)  );
+    text-shadow: 1px 2px rgb(93, 55, 129);
+    color: rgb(221, 157, 232);
+}
+
+header,main,footer{
+    width: 100%;
+    padding:0 400px;
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 6px 6px  rgb(92, 56, 137) ;
+    
+}
+
+header .title{
+    font-size: 55px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+header .subtitle{
+    font-size: 40px;
+}
+
+header{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 250px;
+    height: 330px;
+    background-color: rgb(247, 220, 255);
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+    transition: 1s;
+    user-select: none;
+}
+
+.card:hover{
+    scale: 1.1;
+    rotate: 5deg;
+    
+}
+
+.card-img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-price{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-button{
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 7px;
+    border: 1px solid;
+    box-shadow: 2px 2px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.card-button::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("img/icons/icons8-cart-50.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    cursor: pointer;
+    /* right: 1px; */
+    /* bottom: 1px; */
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+main{
+    margin-bottom: 40px;
+}
+
+.author{
+    font-size: large;
+}
